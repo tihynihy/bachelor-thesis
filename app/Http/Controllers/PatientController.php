@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Models\Patient;
@@ -12,6 +11,8 @@ class PatientController extends Controller
         $patients = Patient::all();
         return view('patients.index', ['patients' => $patients]);
     }
+
+
 
     public function create()
     {

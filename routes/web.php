@@ -10,7 +10,7 @@ Route::get('/', function () {
 });
 
 Route::get('test-connection', function(){
-    $records = Record::all();  //fetch all the records 
+    $records = Record::all();  
 
     return $records;
 });
